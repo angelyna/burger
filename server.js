@@ -30,6 +30,6 @@ app.use('/', router);
 
 
 // DEFINE PORT AND START SERVER LISTEN
-var PORT = 8000;
+const PORT = process.env.PORT || 8000;
 app.listen(process.env.PORT || PORT);
 console.log("Local host:" + PORT);
